@@ -124,7 +124,7 @@ func runTask(tasks []Task) map[int]time.Duration {
 	var mu sync.Mutex
 
 	for i, t := range tasks {
-		go func(i int, task Task) {
+		go func(i int, t Task) {
 			defer wg.Done()
 
 			startTime := time.Now()
