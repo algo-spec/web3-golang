@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+database:
+  driver: mysql
+  url: "root:12345@tcp(127.0.0.1:3307)/gorm?charset=utf8mb4&parseTime=True&loc=Local"
+
+logging:
+  level: debug
+
+jwt: 
+  secret: "secret"
